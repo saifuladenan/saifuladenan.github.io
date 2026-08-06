@@ -3,7 +3,6 @@ My Online Portfolio
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Catalog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
