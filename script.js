@@ -8,21 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
             return response.json();
         })
         .then(data => {
-            const keys = Object.keys(data);
+            const container = document.getElementById("catelog_container");
+			
+            Object.entries(data).forEach(([key, item]) => {
+                const catalogItem = document.createElement("div");
 
-            console.log("Keys:", keys);
+                catalogItem.classList.add("catalog-item");
 
-            // First key
-            const key = keys[0];
-            console.log("First key:", key);
+                catalogItem.innerHTML = `
+                    <h3>${key}</h3>
+                    <p><strong>Description:</strong> ${item.Description}</p>
+                    <p><strong>Language:</strong> ${item.Language}</p>
+                    <p><strong>Scale:</strong> ${item.Scale}</p>
+                    <p><strong>Date:</strong> ${item.Date || "N/A"}</p>
+                `;
 
-            // Check if JSON has data
-            if (keys.length === 0) {
-                console.log("catelog.json is empty");
-                return;
-            }
-
-            console.log("JSON has data");
+                container.appendChild(catalogItem);
+            });
         })
         .catch(error => {
             console.error("Failed to load catelog.json:", error);
