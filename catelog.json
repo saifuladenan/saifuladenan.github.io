@@ -1,7 +1,7 @@
 {
 	
 	 "Postmark-Email-Blast": {
-        "Description": "",
+        "Description": "The Postmark Email Blast is a Visual Basic (VB)-based email broadcasting system that uses MySQL as its database and Postmark as the email delivery service. The system is designed for high-volume email campaigns using parallel processing while maintaining a configurable and controlled email sending rate.",
 		 "Language": "VB",
         "Platform": "Visual Studio",
         "Scale": "Medium",
