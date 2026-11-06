@@ -1,5 +1,14 @@
 {
 	
+	"Word-Data-Extractor": {
+        "Description": "An automated text extraction tool that dynamically generates search anchors to identify, retrieve, and organize relevant information from large volumes of text files into structured Excel spreadsheets.",
+		 "Language": "C#",
+        "Platform": "Visual Studio",
+        "Scale": "Small",
+        "Date": "07 Nov 2026",
+        "Link": "https://github.com/saifuladenan/Word-Data-Extractor",
+        "Image": "images/Word-Data-Extractor.png"
+    },
 	 "Postmark-Email-Blast": {
         "Description": "The Postmark Email Blast is a Visual Basic (VB)-based email broadcasting system that uses MySQL as its database and Postmark as the email delivery service. The system is designed for high-volume email campaigns using parallel processing while maintaining a configurable and controlled email sending rate.",
 		 "Language": "VB",
